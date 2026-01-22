@@ -9,9 +9,10 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class ProviderWebClient {
 
+
     private final WebClient webClient;
 
-    public Mono<String> getInstance(){
+    public Mono<String> getInstanceInfo(){
         Mono<String> response = webClient.get()
                 .uri("/instance-info")
                 .retrieve()

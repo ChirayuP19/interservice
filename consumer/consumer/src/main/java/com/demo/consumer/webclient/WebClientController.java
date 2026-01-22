@@ -22,6 +22,6 @@ public class WebClientController {
 //                .retrieve()
 //                .bodyToMono(String.class);
 //        return response ;
-        return providerWebClient.getInstance();
+        return providerWebClient.getInstanceInfo();
     }
 }
